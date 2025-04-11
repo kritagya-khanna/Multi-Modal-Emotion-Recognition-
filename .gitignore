@@ -1,0 +1,69 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env/
+.venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Models - large files that shouldn't be versioned
+models/shape_predictor_68_face_landmarks.dat
+models/shape_predictor_68_face_landmarks.dat.bz2
+*.pkl
+*.h5
+*.pt
+
+# Dataset directories - these are typically large and should be downloaded separately
+Video_Speech_Actors_01-24/
+Video_Song_Actors_01-24/
+Audio_Speech_Actors_01-24/
+Audio_Song_Actors_01-24/
+
+# Processed data (optionally exclude if these are large)
+processed/video_features/*/visualization/
+processed/audio_features/*/visualization/
+
+# Generated media files
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.avi
+*.wav
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Specific to your project - add any other large files or sensitive data
