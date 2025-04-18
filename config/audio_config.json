@@ -1,0 +1,39 @@
+{
+    "model": {
+        "name": "cnn_lstm_attention",
+        "input_shape": [128, 128, 1],
+        "cnn_filters": [32, 64, 128, 256],
+        "cnn_kernel_size": 3,
+        "cnn_pool_size": 2,
+        "lstm_units": 128,
+        "lstm_layers": 2,
+        "dense_units": [256, 128],
+        "dropout_rate": 0.5,
+        "attention_units": 64,
+        "num_classes": 8
+    },
+    "training": {
+        "batch_size": 32,
+        "epochs": 50,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.00001,
+        "early_stopping_patience": 10,
+        "reduce_lr_patience": 5,
+        "reduce_lr_factor": 0.5
+    },
+    "data": {
+        "speech_features_path": "processed/audio_features/speech/balanced_audio_features.csv",
+        "song_features_path": "processed/audio_features/song/balanced_audio_features.csv",
+        "use_song_data": true,
+        "test_size": 0.2,
+        "validation_size": 0.2,
+        "random_state": 42
+    },
+    "augmentation": {
+        "enabled": true,
+        "time_shift_ms": 100,
+        "pitch_shift_steps": 2,
+        "spec_augment": true,
+        "mixup_alpha": 0.2
+    }
+}
